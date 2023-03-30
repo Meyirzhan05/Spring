@@ -11,17 +11,17 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 @ComponentScan("org.example.company")
 public class CompanyConfig {
-//    @Bean
-//    @Primary
-//    public ITCompany getITCompany(Employer<ITRole> director) {
-//        ITCompany company = new ITCompany("SDU", 100);
-//        company.setDirector(director);
-//        return company;
-//    }
-//    @Bean
-//    public ITCompany getAnotherITCompany() {
-//        return new ITCompany("IITU", 200);
-//    }
+    @Bean
+    @Primary
+    public ITCompany getITCompany(Employer<ITRole> director) {
+        ITCompany company = new ITCompany("SDU", 100);
+        company.setDirector(director);
+        return company;
+    }
+    @Bean
+    public ITCompany getAnotherITCompany() {
+        return new ITCompany("IITU", 200);
+    }
 
     @Bean
     public Employer<ITRole> getDirector() {

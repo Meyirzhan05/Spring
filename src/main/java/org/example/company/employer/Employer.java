@@ -24,6 +24,9 @@ public abstract class Employer<T> implements Worker {
     public T getRole() {
         return role;
     }
+    public int getAge() {
+        return age;
+    }
 
     @Override
     public String toString() {

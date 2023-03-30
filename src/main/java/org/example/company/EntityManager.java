@@ -1,11 +1,13 @@
 package org.example.company;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.example.company.employer.Employer;
 
 import java.lang.reflect.Array;
 
 public class EntityManager<T extends Employer> {
+//    @JsonIgnore
     private T[] entities;
     int size;
     @SuppressWarnings("unchecked")
